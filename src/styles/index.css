@@ -9,3 +9,23 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body{
+    background-color: rgb(240, 232, 222);
+    display: flexbox;
+    justify-content: center;
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.task{
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
