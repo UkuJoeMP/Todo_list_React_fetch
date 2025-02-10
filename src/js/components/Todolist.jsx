@@ -112,7 +112,7 @@ const Todos = () => {
             <div className="row">
                 <div className="col-12 col-md-7">
                     <h1 className="title">todo list</h1>
-                    <form onSubmit={(event)=>event.preventDefault()}>
+                    <form className="form-info" onSubmit={(event)=>event.preventDefault()}>
                         <input 
                         type="text" 
                         placeholder="Add the task" 
@@ -124,14 +124,14 @@ const Todos = () => {
                         />
                     </form>
                     {
-                        taskList.length <=0 ? <div>No tiene tareas</div> :
+                        taskList.length <=0 ? <div>No tasks available</div> :
 
                             taskList.map((item) => {
                                 return (
                                     <div key={item.id} className="task">
                                         {item.label}
                                         <span>
-                                            <button onClick={()=> deleteTask(item.id)}>X</button>
+                                            <button type="button" className="btn" data-bs-toggle="button" onClick={()=> deleteTask(item.id)}><i className="fa-solid fa-xmark"></i></button>
                                             {/* <button onClick={()=> editTask(item)}>E</button> */}
                                             {/* <input
                                                 className="form=check=input mt-0"

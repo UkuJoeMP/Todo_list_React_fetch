@@ -29,3 +29,6 @@ body{
     justify-content: space-between;
     padding: 3px;
 }
+.form-info{
+    background: rgb(240, 232, 222);
+}
